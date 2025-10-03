@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "comfyui-facefilter"
+version = "1.0.0"
+description = "ComfyUI nodes for face based filtering plus image batch merging"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Alexandre 'kidev' Poumaroux" }]
+license = { file = "LICENSE" }
+dependencies = ["insightface>=0.7", "onnxruntime-gpu>=1.18", "numpy>=1.24", "opencv-python>=4.8"]
+
+[project.urls]
+Repository = "https://github.com/Kidev/ComfyUI-FaceFilter"
+
+[tool.setuptools]
+py-modules = ["nodes", "face_filter_node", "merge_batches_node"]
+
+[tool.comfy]
+PublisherId = "kidev"
+DisplayName = "ComfyUI-FaceFilter"
+Icon = "https://raw.githubusercontent.com/Kidev/ComfyUI-FaceFilter/refs/heads/main/facefilter.png"

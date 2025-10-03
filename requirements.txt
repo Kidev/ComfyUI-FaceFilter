@@ -1,0 +1,4 @@
+insightface>=0.7
+onnxruntime-gpu>=1.18
+numpy>=1.24
+opencv-python>=4.8
