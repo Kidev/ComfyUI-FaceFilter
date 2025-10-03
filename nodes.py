@@ -1,8 +1,8 @@
-from face_filter_node import (
+from .face_filter_node import (
     NODE_CLASS_MAPPINGS as FF_CLASSES,
     NODE_DISPLAY_NAME_MAPPINGS as FF_NAMES,
 )
-from merge_batches_node import (
+from .merge_batches_node import (
     NODE_CLASS_MAPPINGS as MB_CLASSES,
     NODE_DISPLAY_NAME_MAPPINGS as MB_NAMES,
 )
