@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "comfyui-facefilter"
-version = "1.0.1"
+version = "1.0.2"
 description = "ComfyUI nodes for face based filtering plus image batch merging"
 readme = "README.md"
 requires-python = ">=3.10"

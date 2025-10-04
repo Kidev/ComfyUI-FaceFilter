@@ -75,6 +75,13 @@ This only ensures the two model folders exist and prints where to drop packs.
 * If both valid pick according to `prefer`  
 
 ## Examples
+
+### Required nodes well installed to use the example workflows  
+- [FaceFilter](https://github.com/Kidev/ComfyUI-FaceFilter) (of course)  
+- [ReActor](https://github.com/Gourieff/ComfyUI-ReActor)  
+- [Facetools](https://github.com/dchatel/comfyui_facetools)  
+- [VideoHelperSuite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite) (only for video workflow)  
+
 ### A simple filter 
 
 Workflow avaiable here: ([FaceFilter-simple.json](https://raw.githubusercontent.com/Kidev/ComfyUI-FaceFilter/refs/heads/main/examples/FaceFilter-simple.json))
@@ -84,10 +91,18 @@ A simple usage of the FaceFilter node: the images in the candidates that have pi
 
 ### Face matching faceswap using FaceFilter and [ReActor](https://github.com/Gourieff/comfyui-reactor)  
 
-Workflow avaiable here: ([FaceFilter-Faceswap.json](https://raw.githubusercontent.com/Kidev/ComfyUI-FaceFilter/refs/heads/main/examples/FaceFilter-Faceswap.json))
+Workflow avaiable here: 
+- Picture to picture: ([FaceFilter-Faceswap.json](https://raw.githubusercontent.com/Kidev/ComfyUI-FaceFilter/refs/heads/main/examples/FaceFilter-Faceswap.json))
+- Video to video: ([FaceFilter-Faceswap-Video.json](https://raw.githubusercontent.com/Kidev/ComfyUI-FaceFilter/refs/heads/main/examples/FaceFilter-Faceswap-Video.json))
 
 A simple faceswap tool that will swap the faces of particular persons with another. It does not uses indices or face position, only the face of the target using the FaceFilter node.  
 ![FaceFilter-Faceswap](https://raw.githubusercontent.com/Kidev/ComfyUI-FaceFilter/refs/heads/main/examples/FaceFilter-Faceswap.png)  
+
+Here is a view of the most important blocks in the architecture:  
+![FaceFilter-previews](https://raw.githubusercontent.com/Kidev/ComfyUI-FaceFilter/refs/heads/main/examples/FaceFilter-clean.png)  
+
+Here is a simplified view for you to see the evolution of the image batches across all the nodes and understand the logic:  
+![FaceFilter-previews](https://raw.githubusercontent.com/Kidev/ComfyUI-FaceFilter/refs/heads/main/examples/FaceFilter-previews.png)  
 
 ## Performance tips
 
