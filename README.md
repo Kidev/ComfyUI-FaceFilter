@@ -9,6 +9,9 @@ Two nodes for ComfyUI (face based filtering and batch merge).
 
 ## Install
 
+You can install it directly from the manager.  
+
+Otherwise, manually:
 1) Install the node manually by going to `ComfyUI/custom_nodes/` and running `git clone git@github.com:Kidev/ComfyUI-FaceFilter.git`
 2) Install Python deps: `pip install -r ComfyUI-FaceFilter/requirements.txt`
 
@@ -36,7 +39,7 @@ This only ensures the two model folders exist and prints where to drop packs.
 * `ref_images` (IMAGE) reference images that define the target identity set  
 * `candidate_images` (IMAGE) images to test and filter  
 * `threshold` (FLOAT) cosine similarity threshold (default `0.30`)  
-* `on_empty_matching` (CHOICE) behavior when matching is empty (`return_empty` or `black_51`2 or `pass_through`)  
+* `on_empty_matching` (CHOICE) behavior when matching is empty (`black_512` or `return_empty` or `pass_through`)  
 * `on_empty_rejected` (CHOICE) behavior when rejected is empty (same choices)  
 * `debug` (BOOLEAN) return a debug string with counts and scores  
 * `model_name` (CHOICE) an auto discovered InsightFace pack name (example `antelopev2`)  
